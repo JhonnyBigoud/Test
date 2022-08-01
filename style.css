@@ -1,0 +1,182 @@
+* ::before ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./images/bg0.jpg);
+    min-height: 500px;
+}
+
+
+header a {
+    text-decoration: none;
+    color: lightgray;
+}
+header a:hover{
+    color: rgb(148, 148, 148);
+}
+main {
+	background-color: #d9af7ea3;
+}
+
+
+.formulaire {
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+
+.salut {
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+}
+
+.standard-height {
+    min-height: 40px;
+    
+}
+
+.validation-button {
+    color: grey;
+    border: none;
+}
+
+.validation-button:hover {
+    color: white;
+}
+
+article {
+    display: flex;
+    padding: 10px;
+}
+.article-container {
+    padding: 3px;
+}
+
+/*  CLasse slider */
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img {
+    max-width: 100%;
+    display: none;
+}
+
+.right {
+
+    color: #e1e1e1;
+}
+
+.left { 
+
+    color: #e1e1e1;
+}
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+.eleanor {
+    border-radius: 5px;
+}
+
+.aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 10px;
+    background: linear-gradient(white, grey);
+}
+
+.pay-button {
+    margin: 5px;
+}
+/* FOOTER */
+
+footer{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 576px) {
+    header {
+        height: 70vh;
+    }
+
+
+    footer {
+        display: none;
+    }
+
+    .slider img {
+        width: 335px;
+    }
+
+    .description {
+        display: none;
+    }
+    .sort-button {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .salut {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .right {
+        position: absolute;
+        right: 5px;
+    }
+    .left {
+        position: absolute;
+        left: 5px;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .sort-button {
+        min-width: 150px;
+    }
+}
